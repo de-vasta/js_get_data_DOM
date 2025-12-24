@@ -10,7 +10,7 @@ const totalPopulationEl = document.querySelector('.total-population');
 
 totalPopulationEl.textContent = totalPopulation.toLocaleString(locale);
 
-const avgPopulation = Math.trunc(totalPopulation / populations.length);
+const avgPopulation = Math.round(totalPopulation / populations.length);
 const avgPopulationEl = document.querySelector('.average-population');
 
 avgPopulationEl.textContent = avgPopulation.toLocaleString('en-US');
